@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Lato:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --bg-color-1: #000000;
+  --bg-color-2: #00ff73;
+  --bg-color-3: #fff;
+  --font-color-1: #052e16;
+  --font-color-2: #16a34a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(to top right, var(--bg-color-1) 40%, var(--bg-color-2) 100%);
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 425px;
+  height: 100%;
+  background: var(--bg-color-3);
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.6);
+}
+
+.header {
+  font-size: 24px;
+  margin: 0 15px;
+  padding-top: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  border-bottom: 0.5px solid var(--font-color-1);
+}
+
+.navbar p {
+  color: var(--font-color-2);
+}
+
+.navbar svg {
+  width: 24px;
+}
