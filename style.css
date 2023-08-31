@@ -51,3 +51,23 @@ body {
 .navbar svg {
   width: 24px;
 }
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.video-wrapper {
+  border: 1px solid blue;
+  display: flex;
+}
+ 
+
+.playlist img {
+  width: 100px;
+}
+
+.hidden {
+  display: none;
+}
