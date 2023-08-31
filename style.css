@@ -18,6 +18,7 @@ body {
   font-family: 'Lato', sans-serif;
   background: linear-gradient(to top right, var(--bg-color-1) 40%, var(--bg-color-2) 100%);
   background-repeat: no-repeat;
+  color: var(--font-color-1);
 }
 
 .container {
@@ -55,17 +56,50 @@ body {
 .playlist {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  padding: 20px 0px;
 }
 
 .video-wrapper {
-  border: 1px solid blue;
   display: flex;
+  gap: 0 10px;
+  padding: 15px;
+  transition: all 0.2s;
 }
- 
 
-.playlist img {
-  width: 100px;
+.video-wrapper:hover {
+  transform: scale(1.10, 1.02);
+  background: linear-gradient(to left, #059669 40%, #34d399 100%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.video-wrapper:hover h5, .video-wrapper:hover h6{
+  color: white;
+}
+
+.mv-img {
+  position: relative;
+}
+
+.mv-img img{
+  border-radius: 5px;
+  overflow: hidden;
+  width: 150px;
+  box-shadow: 0 0 10px rgba(16,184,128,0.6);
+}
+
+.duration {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 0 5px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.5);
+}
+
+.mv-details h6 {
+  color: var(--font-color-2);
 }
 
 .hidden {

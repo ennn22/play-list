@@ -55,7 +55,6 @@ const musicvideo = [
   }
 ]
 
-
 const playList = document.querySelector(".playlist");
 
 const addToList = (musicvideo) => {
@@ -68,12 +67,13 @@ const addToList = (musicvideo) => {
       <p class="duration">${musicvideo.duration}</p>
     </div>
     <div class="mv-details">
-      <p class="mv-title">${musicvideo.title}</p>
-      <p class="mv-name">${musicvideo.name}</p>
+      <h5 class="mv-title">${musicvideo.title}</h5>
+      <h6 class="mv-name">${musicvideo.name}</h6>
     </div>
   `
   playList.appendChild(list);
 };
 
 musicvideo.forEach(addToList);
+
 
